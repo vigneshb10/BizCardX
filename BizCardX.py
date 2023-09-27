@@ -14,7 +14,7 @@ import os
 
 # connect to sql, create database if not exists and create table with fields
 def sql_configuration():
-    db = mysql.connector.connect(host="localhost", user="root", password="robertlewandowski")  # establish db connection
+    db = mysql.connector.connect(host="localhost", user="", password="")  # establish db connection
     cursor = db.cursor()  # create cursor
     cursor.execute('create database if not exists BizCardX')  # create data BizCardX if not exists
     db.database = 'BizCardX'
